@@ -74,7 +74,7 @@ int main(void) {
       ptr = strtok(NULL, " ");
     }
 
-    // Asking for reesidence of student
+    // Asking for residence of student
     printf("Enter city of residence of student %d: ", i + 1);
     scanf("%[^\n]s", students[i].residence);
     getchar();

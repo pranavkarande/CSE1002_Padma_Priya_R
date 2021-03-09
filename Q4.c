@@ -3,11 +3,12 @@
    mm/dd/yyyy (eg. 05/23/2021) as input and print them in
    the format dd/mm/yyyy (eg. 23/3/2021).
 */
+
 #include <stdio.h>
 #include <string.h>
 
 // Function to check if a char is in a string
-// equivalent to (a in str) in python
+// equivalent to (<char> in str) in python
 int char_in(char string[20], char *x) {
   int n = strlen(string);
   int bool = 0;
@@ -21,7 +22,7 @@ int char_in(char string[20], char *x) {
 }
 
 // Function to return index of string element in 2D array
-// equivalent to (str.index(a)) in python
+// equivalent to (str.index(<char>)) in python
 int ind(char str1[12][10], char str2[10]) {
   int return_value = 0;
   for(int k = 0; k < 12; ++k) {

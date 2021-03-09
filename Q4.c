@@ -1,6 +1,7 @@
-/* Q4. Write a program to take 3 dates of the format dd-MM-yyyy(eg.
-   23-March-2021), dd/MM/yyyy(eg. 23/Mar/2021) and mm/dd/yyyy(eg. 5/23/2021) as
-   input and print them in the format dd/mm/yy(eg. 23/3/2021).
+/* Q4. Write a program to take 3 dates of the format dd-MM-yyyy
+   (eg. 23-March-2021), dd/MM/yyyy(eg. 23/Mar/2021) and
+   mm/dd/yyyy(eg. 5/23/2021) as input and print them in
+   the format dd/mm/yyyy(eg. 23/3/2021).
 */
 #include <stdio.h>
 #include <string.h>

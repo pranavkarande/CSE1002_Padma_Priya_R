@@ -1,7 +1,8 @@
-/* Q1. Write a program to obtain the detail of an employee
-   (Name, ID, Gender, Designation, basic value, hra value, da value, pf value)
-   using a structures and find out his sallary given
-   sallary = (basic + hra + da) - pf.
+/*
+ * Q1. Write a program to obtain the detail of an employee
+ * (Name, ID, Gender, Designation, basic value, hra value, da value, pf value)
+ * using a structures and find out his sallary given
+ * sallary = (basic + hra + da) - pf.
 */
 #include <stdio.h>
 

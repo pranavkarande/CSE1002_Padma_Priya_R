@@ -1,7 +1,8 @@
-/* Q2. Write a program to obtain detail of m books (Name, ID, Author, price, publication year)
-   being purchased by n customers using structures
-   and apply a discount on all books published before 2004 if the total bill
-   amount of customer is more than 5000 and print discount and final price.
+/*
+ * Q2. Write a program to obtain detail of m books (Name, ID, Author, price, publication year)
+ * being purchased by n customers using structures
+ * and apply a discount on all books published before 2004 if the total bill
+ * amount of customer is more than 5000 and print discount and final price.
  */
 
 #include <stdio.h>

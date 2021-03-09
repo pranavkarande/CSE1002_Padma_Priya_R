@@ -1,7 +1,8 @@
-/* Q3. Write a program to obtain the details of n students (Name, Gender, age, CGPA, languages spoken, residence, Bday)
-   using structures and print all the male students more than 18 years old
-   born on 18th March with CGPA > 8.5 who speak Tamil and reside in Vellore.
-*/
+/*
+ * Q3. Write a program to obtain the details of n students (Name, Gender, age, CGPA, languages spoken, residence, Bday)
+ * using structures and print all the male students more than 18 years old
+ * born on 18th March with CGPA > 8.5 who speak Tamil and reside in Vellore.
+ */
 
 #include <stdio.h>
 #include <string.h>

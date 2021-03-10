@@ -3,7 +3,7 @@
  * (Name, ID, Gender, Designation, basic value, hra value, da value, pf value)
  * using a structures and find out his sallary given
  * sallary = (basic + hra + da) - pf.
-*/
+ */
 #include <stdio.h>
 
 // Creating struct employee

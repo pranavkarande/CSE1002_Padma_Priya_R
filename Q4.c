@@ -38,7 +38,6 @@ int main(void) {
   char months[12][10] = {"January",   "February", "March",    "April",
                          "May",       "June",     "July",     "August",
                          "September", "October",  "November", "December"};
-
   char *date1 = strtok(input[0], "-"); // This points to 23
   char *temp = strtok(NULL, "-"); // This points to March
   int month1 = ind(months, temp) + 1; // This stores 03
@@ -57,6 +56,7 @@ int main(void) {
   char *year2 = strtok(NULL, "/"); // This points to 2021
   // Printing converted date
   printf("%s converted to dd/mm/yyyy is: %s/%d/%s\n", input_copy[1], date2, month2, year2);
+
 
   // Converting third date 03/23/2021
   char *month3 = strtok(input[2], "/"); // This points to 03

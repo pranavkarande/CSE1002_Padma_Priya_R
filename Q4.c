@@ -9,7 +9,7 @@
 #include <string.h>
 
 // Function to return index of string element in 2D array
-// equivalent to (str.index(<char>)) in python
+// equivalent to (list.index(<element>)) in python
 int ind(char str1[12][10], char str2[10]) {
   int return_value = 0;
   for(int k = 0; k < 12; ++k) {

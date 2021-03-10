@@ -39,7 +39,8 @@ int main(void) {
   int no_of_passed = 0;
 
   // Starting loop for entering details of each student
-  for(int i = 0; i < no_of_students; ++i) {
+  int i;
+  for(i = 0; i < no_of_students; ++i) {
 
     // Asking for name of student
     printf("Enter name of student %d: ", i + 1);
@@ -70,7 +71,8 @@ int main(void) {
     // Splitting the input to obtain each language as element of array
     char *ptr = strtok(languages_temp, " ");
 
-    for(int j = 0; ptr != NULL; ++j) {
+    int j;
+    for(j = 0; ptr != NULL; ++j) {
       strcpy(students[i].languages[j], ptr);
       ptr = strtok(NULL, " ");
     }
@@ -94,7 +96,8 @@ int main(void) {
         (students[i].CGPA > 8.5) &&
         !(strcmp(students[i].residence, "Vellore"))) {
 
-      for(int k = 0; k < 5; ++k) {
+      int k;
+      for(k = 0; k < 5; ++k) {
         if(!strcmp(students[i].languages[k], "Tamil")) {
           passed_bool = 1;
         }
@@ -120,7 +123,8 @@ int main(void) {
   printf("%d student(s) passed the test conditions.\n", no_of_passed);
   if(no_of_passed > 0) {
     printf("Their name(s) is/are:\n");
-    for(int h = 0; h < no_of_passed; ++h) {
+    int h;
+    for(h = 0; h < no_of_passed; ++h) {
       printf("%s\n", passed[h]);
     }
   }

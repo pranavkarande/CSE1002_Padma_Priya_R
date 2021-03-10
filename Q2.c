@@ -27,7 +27,8 @@ int main(void) {
   printf("\n");
 
   // Loop for each customer starts
-  for(int i; i < no_of_customers; ++i) {
+  int i;
+  for(i = 0; i < no_of_customers; ++i) {
 
     // Input number of books the customer wants
     int no_of_books;
@@ -43,7 +44,8 @@ int main(void) {
     float total = 0;
 
     // Creating loop for taking inputs for each book
-    for(int j; j < no_of_books; ++j) {
+    int j;
+    for(j = 0; j < no_of_books; ++j) {
       // Input name of book
       printf("Enter name of book %d: ", j + 1);
       scanf("%[^\n]s", books[j].book_name);
@@ -75,7 +77,8 @@ int main(void) {
 
     // Applying the discount on books eligible and printing
     if(total >= 5000) {
-      for(int k; k < no_of_books; ++k) {
+      int k;
+      for(k = 0; k < no_of_books; ++k) {
         if(books[k].pub_year < 2004) {
           books[k].price /= 2;
           total -= books[k].price;

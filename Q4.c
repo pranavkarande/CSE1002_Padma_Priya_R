@@ -12,7 +12,8 @@
 // equivalent to (list.index(<element>)) in python
 int ind(char str1[12][10], char str2[10]) {
   int return_value = 0;
-  for(int k = 0; k < 12; ++k) {
+  int k;
+  for(k = 0; k < 12; ++k) {
     if(!strcmp(str2, str1[k])) {
       return_value = k;
       break;
@@ -27,7 +28,8 @@ int main(void) {
   // Taking 3 inputs
   char input[3][20];
   char input_copy[3][20]; // Creating copy because delimiters in input will be replaced by '\0'
-  for(int j = 0; j < 3; ++j){
+  int j;
+  for(j = 0; j < 3; ++j){
     printf("Enter date %d: ", j+1);
     scanf("%s", input[j]);
     getchar();

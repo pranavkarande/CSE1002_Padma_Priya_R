@@ -8,20 +8,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// Function to check if a char is in a string
-// equivalent to (<char> in str) in python
-int char_in(char string[20], char *x) {
-  int n = strlen(string);
-  int bool = 0;
-  // Traverse through string to check if given char is equal to an element
-  for(int i = 0; i < n; ++i) {
-    if(string[i] == *x) {
-      bool = 1;
-    }
-  }
-  return bool;
-}
-
 // Function to return index of string element in 2D array
 // equivalent to (str.index(<char>)) in python
 int ind(char str1[12][10], char str2[10]) {

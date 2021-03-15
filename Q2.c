@@ -1,8 +1,8 @@
 /*
- * Q2. Write a program to obtain detail of m books (Name, ID, Author, price, publication year)
- * being purchased by n customers using structures
- * and apply a discount on all books published before 2004 if the total bill
- * amount of customer is more than 5000 and print discount and final price.
+ * Q2. Write a program to obtain detail of m books (Name, ID, Author, price,
+ * publication year) being purchased by n customers using structures and apply a
+ * discount on all books published before 2004 if the total bill amount of
+ * customer is more than 5000 and print discount and final price.
  */
 
 #include <stdio.h>
@@ -28,7 +28,7 @@ int main(void) {
 
   // Loop for each customer starts
   int i;
-  for(i = 0; i < no_of_customers; ++i) {
+  for (i = 0; i < no_of_customers; ++i) {
 
     // Input number of books the customer wants
     int no_of_books;
@@ -45,7 +45,7 @@ int main(void) {
 
     // Creating loop for taking inputs for each book
     int j;
-    for(j = 0; j < no_of_books; ++j) {
+    for (j = 0; j < no_of_books; ++j) {
       // Input name of book
       printf("Enter name of book %d: ", j + 1);
       scanf("%[^\n]s", books[j].book_name);
@@ -71,18 +71,20 @@ int main(void) {
       scanf("%f", &books[j].price);
       getchar();
 
-      total+=books[j].price;
+      total += books[j].price;
       printf("\n");
     }
 
     // Applying the discount on books eligible and printing
-    if(total >= 5000) {
+    if (total >= 5000) {
       int k;
-      for(k = 0; k < no_of_books; ++k) {
-        if(books[k].pub_year < 2004) {
+      for (k = 0; k < no_of_books; ++k) {
+        if (books[k].pub_year < 2004) {
           books[k].price /= 2;
           total -= books[k].price;
-          printf("Congratulations! You are eligible for a discount on the book %s. The price is now %f.\n", books[k].book_name, books[k].price);
+          printf("Congratulations! You are eligible for a discount on the book "
+                 "%s. The price is now %f.\n",
+                 books[k].book_name, books[k].price);
         }
       }
     }
@@ -90,5 +92,4 @@ int main(void) {
     printf("Total bill amount after discounts is %f.\n", total);
     printf("\n");
   }
-
 }

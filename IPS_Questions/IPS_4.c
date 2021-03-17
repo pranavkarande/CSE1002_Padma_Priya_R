@@ -40,5 +40,5 @@ int main(void) {
       total_price+=new.price;
     }
   }
-  printf("Today's total income is %f.\n", total_price);
+  printf("Today's total income is %g.\n", total_price);
 }

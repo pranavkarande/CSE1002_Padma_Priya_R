@@ -16,7 +16,7 @@ int power(int base, int exp) {
 
 int main(void) {
   char inp[100];
-  printf("Enter binary number to convert to decimal: ");
+  printf("Enter hexadecimal number to convert to decimal: ");
   scanf("%s", inp);
   getchar();
 
@@ -25,9 +25,11 @@ int main(void) {
   int rank = 0;
 
   int i;
-  for (i = len-1; i > -1; --i) {
-    if(inp[i] == '1') {
-      out+=power(2, rank);
+  for (i = len - 1; i > -1; --i) {
+    if (inp[i] > 47 && inp[i] < 58) {
+      out +=((int)(inp[i]) - 48) * power(16, rank);
+    } else if (inp[i] > 64 && inp[i] < 71) {
+      out += ((int)(inp[i]) - 55) * power(16, rank);
     }
     rank++;
   }

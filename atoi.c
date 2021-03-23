@@ -7,7 +7,6 @@ int power(int base, int exp) {
   for (j = 0; j < exp; ++j) {
     ans *= base;
   }
-
   return ans;
 }
 

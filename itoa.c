@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int power(int base, int exp) {
-  int ans = base;
-  int j;
-  for (j = 0; j < exp; ++j) {
-    ans *= base;
-  }
-
-  return ans;
-}
-
 char *itoa(int val) {
   char temp[50];
   char ret[50];

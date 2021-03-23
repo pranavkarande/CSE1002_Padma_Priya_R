@@ -39,5 +39,5 @@ int main(void) {
   scanf("%d", &inp);
   getchar();
 
-  printf("You entered %s.\n", itoa(inp));
+  printf("Input converted to string is %s.\n", itoa(inp));
 }

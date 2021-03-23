@@ -28,5 +28,5 @@ int main(void) {
   scanf("%s", inp);
   getchar();
 
-  printf("You entered %d.\n", atoi(inp));
+  printf("Input converted to integer is %d.\n", atoi(inp));
 }

@@ -24,22 +24,25 @@ int main(void) {
 
     if (s[j][0] != 'C') {
       possible[j] = 0;
-      break;
+      continue;
     }
 
     if (s[j][len - 1] != 'S') {
       possible[j] = 0;
-      break;
+      continue;
     }
 
     int k;
     for (k = 0; k < len - 1; ++k) {
       if (s[j][k] == 'C' && s[j][k + 1] == 'S') {
         possible[j] = 0;
+        break;
       } else if (s[j][k] == 'E' && s[j][k + 1] == 'C') {
         possible[j] = 0;
+        break;
       } else if (s[j][k] == 'S' && s[j][k + 1] != 'S') {
         possible[j] = 0;
+        break;
       }
     }
   }

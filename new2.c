@@ -15,7 +15,7 @@ struct laptop {
 int power(int base, int exp) {
   int ans = base;
   int j;
-  for (j = 0; j < exp; ++j) {
+  for (j = 0; j < exp - 1; ++j) {
     ans *= base;
   }
   return ans;
@@ -23,12 +23,13 @@ int power(int base, int exp) {
 
 int isarmstrong(int a) {
   int sum = 0;
+  int a_cp = a;
   while (a > 0) {
     sum += power(a % 10, 3);
     a/=10;
   }
 
-  if (sum == a) {
+  if (sum == a_cp) {
     return 1;
   } else {
     return 0;

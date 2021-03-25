@@ -15,10 +15,11 @@ int main(void) {
   }
 
   int possible[T];
+  int len;
 
   int j;
   for (j = 0; j < T; ++j) {
-    int len = strlen(s[j]);
+    len = strlen(s[j]);
     possible[j] = 1;
 
     if (s[j][0] != 'C') {
@@ -26,7 +27,7 @@ int main(void) {
       break;
     }
 
-    if(s[j][len - 1] != 'S') {
+    if (s[j][len - 1] != 'S') {
       possible[j] = 0;
       break;
     }
@@ -40,12 +41,6 @@ int main(void) {
       } else if (s[j][k] == 'S' && s[j][k + 1] != 'S') {
         possible[j] = 0;
       }
-    }
-
-    if(possible[j] == 1){
-      printf("yes\n");
-    } else {
-      printf("no\n");
     }
   }
   int l;

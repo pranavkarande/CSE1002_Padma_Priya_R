@@ -25,7 +25,8 @@ int main(void) {
   for (p = 1; p < n; ++p) {
     int q;
     for (q = 0; q < n - 1; ++q) {
-      if (inp[p][q] == inp[p - 1][q] && inp[p - 1][q] == inp[p][q + 1]) {
+      if (inp[p][q] == inp[p - 1][q] &&
+          inp[p - 1][q] == inp[p][q + 1]) {
         int ver_len = 0, hor_len = 0;
         int r;
         for (r = q; r < n - 1; ++r) {

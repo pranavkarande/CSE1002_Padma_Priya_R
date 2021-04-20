@@ -45,7 +45,9 @@ class Employee {
     Sal = ((basic + 0.2*basic + 0.2*basic) - (0.2*basic));
   }
   void updateSalary() {
-    if (Gender == 'M' && Age > 45 && YoJ < 2004 && !strcmp(Design, "Manager")) {
+    if (Gender == 'M' &&
+        Age > 45 && YoJ < 2004 &&
+        !strcmp(Design, "Manager")) {
       Sal += 0.05*Sal;
     }
   }

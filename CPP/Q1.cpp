@@ -27,20 +27,21 @@ void Employee::store() {
   cin >> Age;
   cout << "Enter Designation: ";
   cin >> Design;
-  cout << "Enter Gender: ";
+  cout << "Eter Gender: ";
   cin >> Gender;
   cout << "Enter Year of Joining: ";
   cin >> YoJ;
+  Sal = 0;
 }
 
 void Employee::display() {
-  cout << ID << endl;
-  cout << Name << endl;
-  cout << Age << endl;
-  cout << Sal << endl;
-  cout << Design << endl;
-  cout << Gender << endl;
-  cout << YoJ << endl;
+  cout << "ID: " << ID << endl;
+  cout << "Name: " << Name << endl;
+  cout << "Age: " << Age << endl;
+  cout << "Salary: " << Sal << endl;
+  cout << "Designation: " << Design << endl;
+  cout << "Gender: " << Gender << endl;
+  cout << "Year of joining: " << YoJ << endl;
 }
 
 void Employee::calSalary() {
@@ -60,12 +61,25 @@ void Employee::updateSalary() {
 }
 
 int main(void) {
-  Employee e;
+  int n;
+  cout << "Enter number of employees: " ;
+  cin  >> n;
+  Employee *e[n];
 
-  e.store();
-  cout << "------Before-------" << endl;
-  e.display();
-  e.calSalary();
-  cout << "------After-------" << endl;
-  e.display();
+  int i;
+  for (i = 0; i < n; ++i) {
+    e[i] = new Employee;
+  }
+  for (i = 0; i < n; ++i) {
+    cout << "Enter details of employee "
+         << i + 1 << " : " << endl;
+    e[i]->store();
+  }
+
+  for (i = 0; i < n; ++i) {
+    cout << "Details of employee "
+         << i + 1 << " are:" << endl;
+    e[i]->display();
+  }
+
 }

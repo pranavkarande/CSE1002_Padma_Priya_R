@@ -64,6 +64,7 @@ int main(void) {
   int n;
   cout << "Enter number of employees: " ;
   cin  >> n;
+  cout << "\n";
   Employee *e[n];
 
   int i;
@@ -74,12 +75,22 @@ int main(void) {
     cout << "Enter details of employee "
          << i + 1 << " : " << endl;
     e[i]->store();
+    cout << "\n";
   }
 
   for (i = 0; i < n; ++i) {
     cout << "Details of employee "
-         << i + 1 << " are:" << endl;
+         << i + 1 << " before calsal are:" << endl;
     e[i]->display();
+    cout << "\n";
+
+    e[i]->calSalary();
+    cout << "\n";
+
+    cout << "Details of employee "
+         << i + 1 << " after calsal are:" << endl;
+    e[i]->display();
+
   }
 
 }

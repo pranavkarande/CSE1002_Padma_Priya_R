@@ -11,11 +11,11 @@ class Employee {
   char Gender;
   int YoJ;
 
-  public:
-    void store();
-    void display ();
-    void calSalary();
-    void updateSalary();
+public:
+  void store();
+  void display ();
+  void calSalary(int j);
+  void updateSalary();
 };
 
 void Employee::store() {
@@ -27,7 +27,7 @@ void Employee::store() {
   cin >> Age;
   cout << "Enter Designation: ";
   cin >> Design;
-  cout << "Eter Gender: ";
+  cout << "Enter Gender: ";
   cin >> Gender;
   cout << "Enter Year of Joining: ";
   cin >> YoJ;
@@ -44,9 +44,9 @@ void Employee::display() {
   cout << "Year of joining: " << YoJ << endl;
 }
 
-void Employee::calSalary() {
+void Employee::calSalary(int j) {
   float basic;
-  cout << "Enter the basic value: ";
+  cout << "Enter the basic value for employee " << j << " : ";
   cin >> basic;
   Sal = ((basic + 0.2 * basic + 0.2 * basic) - (0.2 * basic));
 }
@@ -73,7 +73,7 @@ int main(void) {
   }
   for (i = 0; i < n; ++i) {
     cout << "Enter details of employee "
-         << i + 1 << " : " << endl;
+         << i + 1 << ":" << endl;
     e[i]->store();
     cout << "\n";
   }
@@ -84,12 +84,13 @@ int main(void) {
     e[i]->display();
     cout << "\n";
 
-    e[i]->calSalary();
+    e[i]->calSalary(i + 1);
     cout << "\n";
 
     cout << "Details of employee "
          << i + 1 << " after calsal are:" << endl;
     e[i]->display();
+    cout << "\n";
 
   }
 

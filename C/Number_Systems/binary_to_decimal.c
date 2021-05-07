@@ -27,7 +27,7 @@ int main(void) {
   int i;
   for (i = len-1; i > -1; --i) {
     if(inp[i] == '1') {
-      out+=power(2, rank);
+      out += power(2, rank);
     }
     rank++;
   }

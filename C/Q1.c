@@ -1,7 +1,7 @@
 /*
  * Q1. Write a program to obtain the detail of an employee
  * (Name, ID, Gender, Designation, basic value, hra value, da value, pf value)
- * sing a structures and find out his sallary given
+ * using a structures and find out his sallary given
  * sallary = (basic + hra + da) - pf.
  */
 #include <stdio.h>
